@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tarbie – jurek jyluy</title>
+    <style>
+        .gallery-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #f6ffea;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+.gallery-container img {
+    margin-right: 10px; 
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.thumbnail:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+    </style>
+</head>
+<body style="background-color: #f6ffea">
+    <img src="https://gcdnb.pbrd.co/images/f52XZvRoeW0F.jpg?o=1" alt="Tarbie" width="100%">
+    <div class="gallery-container">
+        <img src="Adobe Express - file.png" alt="Description of Image 1" class="thumbnail">
+        <img src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg" alt="Description of Image 2" class="thumbnail">
+        <img src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg" alt="Description of Image 3" class="thumbnail">
+        <img src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg" alt="Description of Image 4" class="thumbnail">
+        <img src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg" alt="Description of Image 5" class="thumbnail">
+    </div>
+</body>
